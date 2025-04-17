@@ -1,0 +1,213 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "VINTAGE VINYL & RETRO SOUNDS",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our handpicked collection of classic vinyl records, vintage audio equipment, and retro music accessories.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Vinyl",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Browse Equipment",
+            "button_link_2": "shopify://collections/all",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Authentic Sound of Yesterday",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Since 1975, our store has been a haven for audiophiles and music lovers seeking the warm, rich sounds that only vinyl can deliver. We personally curate every record in our collection, from classic rock and jazz to soul, funk, and beyond. Our vintage audio equipment is meticulously restored to preserve the authentic listening experience of decades past.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "image": "background-record-store.jpg"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestselling Vinyl Records",
+        "heading_size": "h2",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "featured-albums"
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "beatles-abbey-road-vinyl",
+            "second_image": true
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "settings": {
+        "heading": "Featured Albums & Collections",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "The Art of Vinyl",
+        "video_url": "https://www.youtube.com/watch?v=Yd2SW-Fys6I",
+        "heading_size": "h2",
+        "description": "Explore how vinyl records are made at Jack White's Third Man Records. See the fascinating process from cutting to pressing that creates the unique analog sound we love.",
+        "full_width": true,
+        "cover_image": "shopify:\/\/shop_images\/photo-1603048588665-791ca8aea617.jpg",
+        "color_scheme": "scheme-5",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Rare Vinyl Finds",
+            "text": "<p>Our collection includes limited pressings, original first editions, and hard-to-find releases from every era. Each record is carefully graded and cleaned for optimal sound quality.<\/p>",
+            "link_label": "Browse Rare Finds",
+            "link": "shopify://collections/all"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Vintage Turntables",
+            "text": "<p>Experience music the way it was meant to be heard with our collection of restored vintage turntables, amplifiers, and speakers from iconic brands of the past.<\/p>",
+            "link_label": "Shop Equipment",
+            "link": "shopify://collections/all"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Retro Accessories",
+            "text": "<p>Complete your vintage audio setup with our selection of record cleaning kits, storage solutions, and other accessories designed to keep your collection in pristine condition.<\/p>",
+            "link_label": "View Accessories",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "Why Choose Vinyl?",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Learn About Vinyl Care",
+        "button_link": "shopify://pages/about",
+        "swipe_on_mobile": true,
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text",
+    "featured_collection",
+    "collage",
+    "video",
+    "multicolumn"
+  ]
+}

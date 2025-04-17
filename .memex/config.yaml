@@ -1,0 +1,43 @@
+card_image: ''
+created_at: 2025-04-17 11:54:24.705000
+creator_id: unknown
+deployment:
+  last_deployed: null
+  type: null
+  url: ''
+description: Shopify demo store
+domain: ''
+features:
+- ''
+getting_started_screen: false
+getting_started_screen_index: 0
+git:
+  branch: main
+  remote: origin
+  url: https://github.com/memextech/shopify-vinyl-store-template
+hero_image: https://raw.githubusercontent.com/memextech/shopify-vinyl-store-template/main/public/images/hero-image.png
+icon: ''
+is_published: false
+pills:
+- icon: Music
+  label: Customise
+  prompt: Change the store them to look more like 90s music store
+project_id: 1ls1qSJctuc622ufUiq1
+published_at: null
+requirements:
+- description: ''
+  type: ''
+slug: ''
+storage:
+  compression_enabled: null
+  gcs_path: null
+  last_sync: null
+  max_file_size_mb: null
+  size_bytes: null
+title: Shopify Vinyl Store Template
+tools:
+- name: ''
+  role: ''
+  type: ''
+  version: ''
+updated_at: 2025-04-17 11:54:24.705000

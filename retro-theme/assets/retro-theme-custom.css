@@ -1,0 +1,108 @@
+/* Retro Music Store Custom Styles */
+
+/* Adding a subtle grain texture to the background */
+body {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEDElEQVRogZXZW5LkIAgGYOr9b8rMczDbcO5p+kctMxVjRD4QiHG73QKAwAAIAAQA4X8BAAgAAEIIiDECAAghQK01rbXUWtNaSyEECCFACBnee3jv4ZzD8zzw3iOlhBgjYozoY4wxiTFiXdcUY4R3HmMeGHPDXIxRSE45y/lAzhkppfTvdYW11jTnTM45mcvlItM0yTRNMk2TTNMs0zTLPM9yHqecz1POOfV6vWS9XmVdV1nXVW5fuN1usizLdFmWdL/fb4+vr8v9fr9dl2W5Xa/X2+W3aZrmZZqmeZnnWS7LIs/nU57Pp+z7LrfbTR6Ph6zrKiEElmma9DRNlZhRRinFpJRMjNHEGE2M0YQQTAjBxBhNCMGEEEwIwcQYTYzRpJRMSsmklEzO2eSczf1+t/f73eacbc7Z5pxtztnmnO39fjchBJNSMjFGs6yrad9N10nXmXmezbIsZp5nE0Iw3vs0z3Nd17UihOA8zxWvnfM8134P55wsy1LXda3jOA7nnJnneWgdcs4mhGByzibn/K+Ncx6stab3/vPSBSGktfapZb33QXtvnufZpmmyy7LYdV3tsiw2hGBjjDaEYGOMtvc0xmhDCHZZFrvvcx3H0c7znPr807JMrbXu93tdliX1Y9I0n9+70G3bctu2fByHLMsiy7LIOedvECEEhBAQQkAphf37uy/UWmMpJZVS0t8A3ULBOQfnHNZ1xbqu+AwCYRjO8wRjDEopHMeB4zhwvx9YlhnzPGMYBuz7jmmaMM8zjuPApi5Ya4EYI2KMWJYFy7JgHEcYY7AsC4wxGIYB+75j33fM84xxHDFNE7JUTADESYJzDt57xBgRQoCUEsYYkFJCKQUhBIxzx3GglIKSM8QnIZtFQuwakE8CntqeZnVDrrXSuPx0nZ9OKcEYg/mSEL+UvrSy65hzBkIIyLkgxvgRxhhDzhnGmHDJcwAAwhtIqRXGGCCEAKklSqnDCXdok+HfgNIKIFIB73BeHWesAsAYXvbLMBFCBu89eO+Po6KBaK1fIG2/9GcljxeIc+7ttF8/TfWvoFL8BPLMI0hKmRBCFCnlC8hLrfVTCdfW8Z/Lv37/p9XWaBCvuSTy5RBbKf0lemutvQTyLyFPXefcpZWvnfNCrZUppchaK7XWn0HTNElKyXbSNE1t0zSZeZ67Y5SZ53lony7LYlJKpnl0SslM09TCp2maLKUb2jLPbMsyTeY8T3Oep7lc/kDmebbHcZjjOMy+72bbNtO+27bZfd/Nvu9m3/fWMrNtm9n33RzHYY7jMI/HIziO46mFe2uZ8XSL9eP4hPSW7y0bY2y3W98R/btfUjveShBCsPu+2+M4umXbtpnWvl+gT5Bpmm5K6Xellb5KKVNrTSml3F7aheJtf0REY1XaLQRPAAAAAElFTkSuQmCC');
+  background-repeat: repeat;
+}
+
+/* Vinyl Record-style Product Cards */
+.card-wrapper .card {
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.card-wrapper:hover .card {
+  transform: rotate(3deg);
+}
+
+.card__inner {
+  border-radius: 50% !important; /* Makes product cards circular like vinyl records */
+}
+
+.card__media {
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+/* Vinyl Record Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.featured-collection .card__media img:hover {
+  animation: spin 4s linear infinite;
+  transform-origin: center;
+}
+
+/* Custom Button Styling */
+.button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+/* Custom Header Styling */
+h1, h2, .h0, .h1, .h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Retro price styling */
+.price {
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+/* Add record groove lines to section separators */
+.section + .section {
+  background-image: linear-gradient(to right, rgba(71, 57, 43, 0.1) 0%, rgba(71, 57, 43, 0.1) 100%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+
+/* Add a record center hole to circular images */
+.image-ratio--circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15%;
+  height: 15%;
+  background-color: #F5EFE0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(71, 57, 43, 0.5);
+  z-index: 2;
+}
+
+/* Retro badge styling */
+.badge {
+  transform: rotate(-5deg);
+}
+
+/* Vintage text shadow for headings */
+.rich-text h2, 
+.rich-text .h2 {
+  text-shadow: 2px 2px 0px rgba(213, 55, 47, 0.3);
+}
+
+/* Retro announcement bar */
+.announcement-bar {
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
