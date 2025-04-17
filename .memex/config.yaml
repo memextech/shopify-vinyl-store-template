@@ -8,7 +8,8 @@ deployment:
 description: Shopify demo store
 domain: ''
 features:
-- ''
+- Shopify
+- Demo
 getting_started_screen: false
 getting_started_screen_index: 0
 git:
@@ -17,13 +18,13 @@ git:
   url: https://github.com/memextech/shopify-vinyl-store-template
 hero_image: https://raw.githubusercontent.com/memextech/shopify-vinyl-store-template/main/public/images/hero-image.png
 icon: ''
-is_published: false
+is_published: true
 pills:
 - icon: Music
   label: Customise
   prompt: Change the store them to look more like 90s music store
 project_id: 1ls1qSJctuc622ufUiq1
-published_at: null
+published_at: 2025-04-17 11:57:36.595000
 requirements:
 - description: ''
   type: ''
@@ -34,10 +35,10 @@ storage:
   last_sync: null
   max_file_size_mb: null
   size_bytes: null
-title: Shopify Vinyl Store Template
+title: Shopify Vinyl Store Demo
 tools:
 - name: ''
   role: ''
   type: ''
   version: ''
-updated_at: 2025-04-17 11:54:24.705000
+updated_at: 2025-04-17 11:58:15.914000
